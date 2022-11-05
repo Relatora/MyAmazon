@@ -5,10 +5,12 @@ import {
   SearchIcon,
   ShoppingCartIcon,
 } from "@heroicons/react/outline";
+import { useSession, signIn, signOut } from "next-auth/react";
 
 const papaReactImgLoader = ({ src }) => `https://links.papareact.com/${src}`;
 
 function Header() {
+  const { data: session } = useSession();
   return (
     <header>
       {/* Top Nav */}
@@ -35,8 +37,8 @@ function Header() {
 
         {/* Right */}
         <div className="text-white flex items-center text-xs space-x-6 mx-6 whitespace-nowrap">
-          <div className="link">
-            <p>Hello Amr Abdallah</p>
+          <div onClick={() => !session ? signIn() :signOut()} className="link">
+            <p> {session ? `Hello ${session.user.name}` : "Sign in"}</p>
             <p className="font-extrabold md:text-sm">Account & Lists</p>
           </div>
 
