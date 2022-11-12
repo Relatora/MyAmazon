@@ -9,5 +9,6 @@ export const authOptions = {
     }),
     // ...add more providers here
   ],
+  secret: "PLACE-HERE-ANY-STRING-Relatora",
 };
 export default NextAuth(authOptions);
