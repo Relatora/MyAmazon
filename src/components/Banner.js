@@ -21,19 +21,19 @@ function Banner() {
         interval={5000}
       >
         <div>
-          <BannerImageWrapper key="0" image="gi1.jpg" title="File 0" />
+          <BannerImageWrapper  image="gi1.jpg" title="File 0" />
           {/* <img loading="lazy" src="https://links.paparact.com/gi1" alt="" /> */}
           {/* <img loading="lazy" src="/gi1" alt="" /> */}
         </div>
 
         <div>
-          <BannerImageWrapper key="1" image="6ff.jpg" title="File 1" />
+          <BannerImageWrapper  image="6ff.jpg" title="File 1" />
           {/* <img loading="lazy" src="https://links.paparact.com/6ff" alt="" /> */}
-          <img loading="lazy" src="/6ff" alt="" />
+          {/* <img loading="lazy" src="/6ff" alt="" /> */}
         </div>
 
         <div>
-          <BannerImageWrapper key="2" image="7ma.jpg" title="File 2" />
+          <BannerImageWrapper  image="7ma.jpg" title="File 2" />
           {/* <img loading="lazy" src="https://links.paparact.com/7ma" alt="" /> */}
         </div>
       </Carousel>

@@ -1,10 +1,9 @@
 import Image from "next/image";
 
-const ImageStatic = ({ key, image }) => {
+const ImageStatic = ({ image }) => {
   return (
     <>
       <Image
-      key={key}
         loading="lazy"
         objectFit="cover"
         width={1500}
