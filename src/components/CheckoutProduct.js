@@ -62,7 +62,7 @@ function CheckoutProduct({
             <img
               loading="lazy"
               className="w-12"
-              src="https://links.papareact.com/fdw"
+              src="/fdw.png"
               alt={`${title} image`}
             />
             <p className="text-xs text-gray-500">Free Next-Day Delivery</p>
